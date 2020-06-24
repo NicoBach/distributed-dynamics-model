@@ -4,7 +4,8 @@
   
   - at the end of environment.yml prefix: /PATH/TO/anaconda3/envs/abgabe
   - conda env create -f environment.yml
-  - cd abgabe/custom_gym
+  - git clone https://github.com/NicoBach/dsl_custom_gym.git
+  - cd dsl_custom_gym
   - pip install -e
 
 ## How2run
