@@ -6,7 +6,7 @@
   - conda env create -f environment.yml
   - git clone https://github.com/NicoBach/dsl_custom_gym.git
   - cd dsl_custom_gym
-  - pip install -e
+  - pip install -e .
 
 ## How2run
   
