@@ -1,5 +1,18 @@
 # Distributed-supervised-learning-of-dynamic-models 
 
+We  present  a  distributed  supervised  learning  architecture, which  can  generate  trajectory  data  conditioned  by  control  commands and  learned  from  demonstrations.  The  architecture  consists  of  an  en-semble of neural networks (NNs) which learns the dynamic model and a separate addressing NN that decides from which NN to draw a prediction. We introduce an error-based method for automatic assignment of data subsets to the ensemble NNs for training using the loss profile of the ensemble.
+
+![training](https://github.com/NicoBach/distributed-dynamics-model/blob/master/pictures/image-train.png)
+
+
+ Each subnetwork will be trained only on data points from its bin. An equal number of samples in bins ensures good competitiveness of  subnetwork  specialization.  Not  providing  equally  sized  bins  for  the  ensemble  networks  will  preclude  specialization  if  at  one  point  an  ensemble  network becomes strictly better than all the others and then wins all training data for itself.
+ 
+![2d-lossspace-before-training](https://github.com/NicoBach/distributed-dynamics-model/blob/master/pictures/image-ls1.png)
+
+![2d-lossspace-after-training](https://github.com/NicoBach/distributed-dynamics-model/blob/master/pictures/image-ls2.png)
+
+
+
 ## Installation
   
   - at the end of environment.yml prefix: /PATH/TO/anaconda3/envs/abgabe
