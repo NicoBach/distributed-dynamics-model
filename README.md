@@ -9,9 +9,7 @@ We  present  a  distributed  supervised  learning  architecture, which  can  gen
  
 ![2d-lossspace-before-training](https://github.com/NicoBach/distributed-dynamics-model/blob/master/pictures/image-ls1.png)
 
-![2d-lossspace-after-training](https://github.com/NicoBach/distributed-dynamics-model/blob/master/pictures/image-ls2.png)
-
-
+In the pictures above the loss profiles for a 2-NNs ensemble in the Acrobot environment are shown. On the left: loss  profiles  of  data  points  of  untrained  subnetworks  in  the  ensemble.  We apply clustering of these data points into two bins (green and black). On the right, the alignment of the data points along the axes (loss profile) is reflecting the successful specialization of the subnetworks after training of the ensemble ofthe two subnetworks (green and black).
 
 ## Installation
   
