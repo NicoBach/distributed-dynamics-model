@@ -1,6 +1,6 @@
 # Distributed-supervised-learning-of-dynamic-models 
 
-We  present  a  distributed  supervised  learning  architecture, which  can  generate  trajectory  data  conditioned  by  control  commands and  learned  from  demonstrations.  The  architecture  consists  of  an  en-semble of neural networks (NNs) which learns the dynamic model and a separate addressing NN that decides from which NN to draw a prediction. We introduce an error-based method for automatic assignment of data subsets to the ensemble NNs for training using the loss profile of the ensemble.
+This is the codebase for  a  distributed  supervised  learning  architecture, which  can  generate  trajectory  data  conditioned  by  control  commands and  learned  from  demonstrations.  The  architecture  consists  of  an  ensemble of neural networks (NNs) which learns the dynamic model and a separate addressing NN that decides from which NN to draw a prediction. This work also introduces an error-based method for automatic assignment of data subsets to the ensemble NNs for training using the loss profile of the ensemble.
 
 ![training](https://github.com/NicoBach/distributed-dynamics-model/blob/master/pictures/image-train.png)
 
